@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1183130",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "1235222",
+      "name": "网址",
+      "font_class": "wangzhi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "4421944",
+      "name": "学历",
+      "font_class": "xueli",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "7408748",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "25964419",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SimonAKing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link rel="stylesheet" href="my-/css/style.css">
+    <link rel="stylesheet" href="my-/assets/font_jao3usbx2de/iconfont.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="content content-intro">
+            <div class="content-inner">
+                <canvas id="background"></canvas>
+                <div class="wrap fade">
+                    <style>
+                        .github-corner:hover .octo-arm {
+                            animation: octocat-wave 560ms ease-in-out
+                        }
+
+                        @keyframes octocat-wave {
+
+                            0%,
+                            100% {
+                                transform: rotate(0)
+                            }
+
+                            20%,
+                            60% {
+                                transform: rotate(-25deg)
+                            }
+
+                            40%,
+                            80% {
+                                transform: rotate(10deg)
+                            }
+                        }
+
+                        @media (max-width:500px) {
+                            .github-corner:hover .octo-arm {
+                                animation: none
+                            }
+
+                            .github-corner .octo-arm {
+                                animation: octocat-wave 560ms ease-in-out
+                            }
+                        }
+                    </style>
+                    <h2 class="content-title">欢迎来到我家</h2>
+                    <h3 class="content-subtitle" original-content="hallow I am 季 繁">&nbsp;</h3>
+                    <a class="enter">滚轮向下</a>
+                    <div class="arrow arrow-1"></div>
+                    <div class="arrow arrow-2"></div>
+                </div>
+            </div>
+            <div class="shape-wrap">
+                <svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800"
+                    xmlns:pathdata="http://www.codrops.com/">
+                    <path
+                        d="M -44,-50 C -52.71,28.52 15.86,8.186 184,14.69 383.3,22.39 462.5,12.58 638,14 835.5,15.6 987,6.4 1194,13.86 1661,30.68 1652,-36.74 1582,-140.1 1512,-243.5 15.88,-589.5 -44,-50 Z"
+                        pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class="content content-main">
+            <div id="card">
+                <div class="card-inner fade">
+                    <header>
+                        <img src="./assets/cadaacb1a7dfa0f16051fa90a5c59ede.jpg" width="100" height="100" alt="avatar">
+                        <h1 data-translate="name">你好，我的朋友</h1>
+                        <h2 id="signature" data-translate="signature"></h2>
+                    </header>
+                    <ul>
+                        <li>
+                            <a href="./jianli.html" aria-label="Blog">
+                                <i class="icon icon-bokeyuan"> </i>
+                                <span data-translate="Blog">
+                                    投名状<br>
+                                    (简历)
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/wx.jpg" aria-label="About">
+                                <i class="icon icon-xiaolian"></i>
+                                <span data-translate="About">微信</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./xinxi.html" >
+                                <i class="iconfont icon-xueli ios1term"><br></i>
+                                <span data-translate="About">个人信息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com" aria-label="Github" target="_blank">
+                                <i class="icon icon-github"></i><span data-translate="Github">Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <canvas class="grid-background" id="gridCanvas"></canvas>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+        window.$ = selector => document.querySelector(selector)
+        const getOriginalContent = selector => $(selector).getAttribute("original-content")
+        window.subtitle = getOriginalContent(".content-subtitle")
+        window.signature = getOriginalContent("#signature")
+        window.config = {
+            SIM_RESOLUTION: 128,
+            DYE_RESOLUTION: 1024,
+            CAPTURE_RESOLUTION: 512,
+            DENSITY_DISSIPATION: 1,
+            VELOCITY_DISSIPATION: 0.2,
+            PRESSURE: 0.8,
+            PRESSURE_ITERATIONS: 20,
+            CURL: 30,
+            SPLAT_RADIUS: 0.25,
+            SPLAT_FORCE: 6000,
+            SHADING: true,
+            COLORFUL: true,
+            COLOR_UPDATE_SPEED: 10,
+            PAUSED: false,
+            BACK_COLOR: { r: 30, g: 31, b: 33 },
+            TRANSPARENT: false,
+            BLOOM: true,
+            BLOOM_ITERATIONS: 8,
+            BLOOM_RESOLUTION: 256,
+            BLOOM_INTENSITY: 0.4,
+            BLOOM_THRESHOLD: 0.8,
+            BLOOM_SOFT_KNEE: 0.7,
+            SUNRAYS: true,
+            SUNRAYS_RESOLUTION: 196,
+            SUNRAYS_WEIGHT: 1.0,
+        }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+</body>
+
+</html>
